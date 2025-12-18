@@ -8,16 +8,15 @@
 </head>
 
 <body>
-  <!-- SIDEBAR (igual al Figma) -->
+  <!-- SIDEBAR -->
   <aside class="sidebar" aria-label="Barra lateral">
     <div class="sidebar__top">
       <h1 class="sidebar__title">Portfolio Aaron<br/>Bautista Martin</h1>
     </div>
 
-    <div class="index-card" aria-label="Índice">
+    <div class="index-card">
       <p class="index-card__label">Indice:</p>
-
-      <nav class="index-card__nav" aria-label="Secciones">
+      <nav class="index-card__nav">
         <a class="nav-btn is-active" href="#sobre-mi">Sobre Mi</a>
         <a class="nav-btn" href="#experiencia">Experiencia</a>
         <a class="nav-btn" href="#conocimientos">Conocimientos</a>
@@ -26,29 +25,25 @@
     </div>
 
     <div class="sidebar__hint">
-      <p class="hint">
-        Tip: podés usar el índice para navegar.
-      </p>
+      <p class="hint">Usá el índice para navegar.</p>
     </div>
   </aside>
 
   <!-- MAIN -->
   <main class="main">
-    <!-- PORTADA (foto grande a la derecha) -->
-    <section class="screen screen--cover" id="top" aria-label="Portada">
+    <!-- PORTADA -->
+    <section class="screen screen--cover" id="top">
       <div class="screen__right center">
         <img class="hero-photo" src="./assets/perfil.jpg" alt="Foto de Aarón" />
       </div>
     </section>
 
     <!-- SOBRE MI -->
-    <section class="screen" id="sobre-mi" aria-label="Sobre mí">
+    <section class="screen" id="sobre-mi">
       <div class="screen__left">
         <h2 class="screen__title">Sobre Mi</h2>
 
-        <p class="screen__text">
-          Mi nombre es Aaron Bautista Martin.
-        </p>
+        <p class="screen__text">Mi nombre es Aaron Bautista Martin.</p>
 
         <p class="screen__text">
           Estudie y me gradue en ORT donde me especialice en la programacion.
@@ -67,7 +62,7 @@
     </section>
 
     <!-- EXPERIENCIA -->
-    <section class="screen" id="experiencia" aria-label="Experiencia">
+    <section class="screen" id="experiencia">
       <div class="screen__left">
         <h2 class="screen__title">Experiencia</h2>
 
@@ -82,19 +77,28 @@
           de aquellos que lo juegan a maxima intensidad y tambien me provee gran
           capacidad como tester.
         </p>
+
+        <div class="screen__block">
+          <a class="link-btn"
+             href="https://liquipedia.net/tft/Ariz"
+             target="_blank"
+             rel="noreferrer">
+            Ver Gaming Profile (Liquipedia)
+          </a>
+        </div>
       </div>
 
       <div class="screen__right center">
         <div class="right-stack">
           <h3 class="right-title">Team Fight Tactics</h3>
-          <img class="feature-img" src="./assets/tft.png" alt="Imagen de Team Fight Tactics" />
+          <img class="feature-img" src="./assets/tft.png" alt="Team Fight Tactics" />
           <p class="right-note">Gaming profile</p>
         </div>
       </div>
     </section>
 
     <!-- CONOCIMIENTOS -->
-    <section class="screen" id="conocimientos" aria-label="Conocimientos">
+    <section class="screen" id="conocimientos">
       <div class="screen__left">
         <h2 class="screen__title">Conocimientos</h2>
 
@@ -103,87 +107,47 @@
           de programacion y aplicaciones de desarrollo.
         </p>
 
-        <div class="screen__block">
-          <h3 class="mini-title">Proyecto</h3>
-          <p class="screen__text">
-            Proyecto destacado: <strong>Favores</strong> (único proyecto en el portfolio).
-          </p>
-          <a class="link-btn" href="#favores">Ver sección Favores</a>
-        </div>
-      </div>
-
-      <div class="screen__right center">
-        <div class="icon-grid" aria-label="Iconos de herramientas y lenguajes">
-          <img src="./assets/blender.png" alt="Blender" />
-          <img src="./assets/vscode.png" alt="Visual Studio Code" />
-          <img src="./assets/python.png" alt="Python" />
-          <img src="./assets/js.png" alt="JavaScript" />
-          <img src="./assets/csharp.png" alt="C#" />
-          <img src="./assets/c.png" alt="C" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FAVORES (proyecto único) -->
-    <section class="screen" id="favores" aria-label="Proyecto Favores">
-      <div class="screen__left">
-        <h2 class="screen__title">Favores</h2>
-
-        <p class="screen__text">
-          Favores es una aplicación web desarrollada como proyecto académico. Simula
-          la interacción entre usuarios mediante registro, login y manejo de información.
-        </p>
-
         <ul class="screen__list">
-          <li>Registro de usuarios</li>
-          <li>Login</li>
-          <li>Manejo de datos</li>
-          <li>Simulación de interacciones</li>
+          <li>Python (basico)</li>
+          <li>JavaScript (basico)</li>
+          <li>C (basico)</li>
+          <li>Herramientas de desarrollo</li>
         </ul>
-
-        <div class="screen__block">
-          <p class="screen__text muted">
-            Si querés, acá después ponemos link a demo y/o GitHub.
-          </p>
-          <div class="row">
-            <a class="pill" href="#" target="_blank" rel="noreferrer">Demo</a>
-            <a class="pill" href="#" target="_blank" rel="noreferrer">Código</a>
-          </div>
-        </div>
       </div>
 
       <div class="screen__right center">
-        <div class="favores-card" aria-label="Preview Favores">
-          <p class="favores-title">Favores</p>
-          <p class="favores-sub">Proyecto académico</p>
-          <div class="favores-box" aria-hidden="true"></div>
-          <p class="favores-mini muted">Preview (placeholder)</p>
-        </div>
+        <p class="muted">Conocimientos adquiridos durante la formacion academica.</p>
       </div>
     </section>
 
     <!-- CONTACTAME -->
-    <section class="screen" id="contactame" aria-label="Contactame">
+    <section class="screen" id="contactame">
       <div class="screen__left">
         <h2 class="screen__title">Contactame</h2>
 
         <p class="screen__text">
-          Si les interesa contactarme tendran acá a su disposicion varias formas
+          Si les interesa contactarme tendran aca a su disposicion varias formas
           de hacerlo.
         </p>
-
-        <div class="screen__block">
-          <p class="screen__text muted small">
-            Reemplazá los links con los tuyos reales.
-          </p>
-        </div>
       </div>
 
       <div class="screen__right center">
         <div class="contact-big">
-          <a class="contact-link" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="contact-link" href="mailto:tu_mail@gmail.com">Gmail</a>
-          <a class="contact-link" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="contact-link" href="mailto:aaronbmartin7@gmail.com">
+            Gmail
+          </a>
+
+          <a class="contact-link"
+             href="https://instagram.com/aaron.bmartin"
+             target="_blank"
+             rel="noreferrer">
+            Instagram
+          </a>
+
+          <!-- LinkedIn se deja como placeholder -->
+          <a class="contact-link" href="#" aria-disabled="true">
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>
