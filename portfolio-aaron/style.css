@@ -148,12 +148,6 @@ body{
   border: 1px solid rgba(0,0,0,.12);
 }
 
-.mini-title{
-  margin: 0 0 8px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .link-btn{
   display: inline-block;
   margin-top: 10px;
@@ -172,17 +166,6 @@ body{
   padding-left: 18px;
   font-size: 14px;
   line-height: 1.6;
-}
-
-.row{ display: flex; gap: 10px; flex-wrap: wrap; }
-.pill{
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 999px;
-  text-decoration: none;
-  border: 1px solid rgba(0,0,0,.25);
-  background: rgba(255,255,255,.25);
-  color: #0d1216;
 }
 
 /* imágenes grandes */
@@ -231,56 +214,42 @@ body{
   filter: drop-shadow(0 2px 0 rgba(0,0,0,.15));
 }
 
-/* Favores placeholder */
-.favores-card{
-  width: min(520px, 92%);
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 16px;
-  padding: 18px;
-  text-align: center;
-}
-.favores-title{
-  margin: 0;
-  font-size: 26px;
-  font-weight: 800;
-  color: rgba(255,255,255,.92);
-}
-.favores-sub{
-  margin: 6px 0 14px;
-  color: rgba(255,255,255,.75);
-}
-.favores-box{
-  height: 220px;
-  border-radius: 14px;
-  background: rgba(0,0,0,.25);
-  border: 1px solid rgba(255,255,255,.12);
-}
-.favores-mini{
-  margin: 10px 0 0;
-  color: rgba(255,255,255,.65);
-}
-
-/* Contacto grande */
-.contact-big{
+/* Contacto como imagenes */
+.contact-logos{
   width: min(720px, 95%);
   display: grid;
+  grid-template-columns: 1fr;
   gap: 26px;
   justify-items: center;
 }
-.contact-link{
-  font-size: 54px;
-  font-weight: 800;
+
+.logo-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: rgba(0,0,0,.80);
-  letter-spacing: .5px;
-}
-.contact-link:hover{
-  filter: brightness(0.95);
+  padding: 6px;
+  border-radius: 14px;
 }
 
+.logo-link img{
+  width: min(520px, 92%);
+  height: auto;
+  filter: drop-shadow(0 3px 0 rgba(0,0,0,.18));
+}
+
+.logo-link:hover{
+  transform: translateY(-1px);
+  filter: brightness(0.98);
+}
+
+.logo-link.is-disabled{
+  pointer-events: none;
+  opacity: .55;
+}
+
+/* util */
 .muted{ opacity: .75; }
-.small{ font-size: 12px; }
 
 .footer{
   padding: 18px 22px;
@@ -291,8 +260,8 @@ body{
 /* responsive */
 @media (max-width: 980px){
   :root{ --sidebar-w: 260px; }
-  .contact-link{ font-size: 44px; }
   .icon-grid img{ width: 82px; }
+  .logo-link img{ width: min(420px, 92%); }
 }
 
 @media (max-width: 780px){
@@ -306,5 +275,5 @@ body{
   }
   .screen__left{ padding: 22px 18px; }
   .screen__right{ padding: 22px 18px; }
-  .contact-link{ font-size: 40px; }
+  .logo-link img{ width: min(360px, 92%); }
 }

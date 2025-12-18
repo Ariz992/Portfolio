@@ -1,7 +1,5 @@
-// año footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// resaltar botón activo del índice según sección visible
 const links = Array.from(document.querySelectorAll(".nav-btn"));
 const sections = links
   .map(a => document.querySelector(a.getAttribute("href")))
@@ -15,7 +13,6 @@ const setActive = (id) => {
 };
 
 const observer = new IntersectionObserver((entries) => {
-  // elegimos la sección con mayor intersección
   const visible = entries
     .filter(e => e.isIntersecting)
     .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
