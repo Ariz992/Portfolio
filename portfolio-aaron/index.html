@@ -32,14 +32,14 @@
   <!-- MAIN -->
   <main class="main">
     <!-- PORTADA -->
-    <section class="screen screen--cover" id="top">
+    <section class="screen screen--cover" id="top" aria-label="Portada">
       <div class="screen__right center">
         <img class="hero-photo" src="./assets/perfil.jpg" alt="Foto de Aarón" />
       </div>
     </section>
 
     <!-- SOBRE MI -->
-    <section class="screen" id="sobre-mi">
+    <section class="screen" id="sobre-mi" aria-label="Sobre mí">
       <div class="screen__left">
         <h2 class="screen__title">Sobre Mi</h2>
 
@@ -62,7 +62,7 @@
     </section>
 
     <!-- EXPERIENCIA -->
-    <section class="screen" id="experiencia">
+    <section class="screen" id="experiencia" aria-label="Experiencia">
       <div class="screen__left">
         <h2 class="screen__title">Experiencia</h2>
 
@@ -98,7 +98,7 @@
     </section>
 
     <!-- CONOCIMIENTOS -->
-    <section class="screen" id="conocimientos">
+    <section class="screen" id="conocimientos" aria-label="Conocimientos">
       <div class="screen__left">
         <h2 class="screen__title">Conocimientos</h2>
 
@@ -116,12 +116,20 @@
       </div>
 
       <div class="screen__right center">
-        <p class="muted">Conocimientos adquiridos durante la formacion academica.</p>
+        <!-- VUELVEN LOS ICONOS (como el código anterior) -->
+        <div class="icon-grid" aria-label="Iconos de herramientas y lenguajes">
+          <img src="./assets/blender.png" alt="Blender" />
+          <img src="./assets/vscode.png" alt="Visual Studio Code" />
+          <img src="./assets/python.png" alt="Python" />
+          <img src="./assets/js.png" alt="JavaScript" />
+          <img src="./assets/csharp.png" alt="C#" />
+          <img src="./assets/c.png" alt="C" />
+        </div>
       </div>
     </section>
 
     <!-- CONTACTAME -->
-    <section class="screen" id="contactame">
+    <section class="screen" id="contactame" aria-label="Contactame">
       <div class="screen__left">
         <h2 class="screen__title">Contactame</h2>
 
@@ -132,21 +140,19 @@
       </div>
 
       <div class="screen__right center">
-        <div class="contact-big">
-          <a class="contact-link" href="mailto:aaronbmartin7@gmail.com">
-            Gmail
+        <!-- LINKS COMO IMAGENES -->
+        <div class="contact-logos" aria-label="Formas de contacto">
+          <a class="logo-link" href="mailto:aaronbmartin7@gmail.com" aria-label="Enviar mail a Gmail">
+            <img src="./assets/gmail.png" alt="Gmail" />
           </a>
 
-          <a class="contact-link"
-             href="https://instagram.com/aaron.bmartin"
-             target="_blank"
-             rel="noreferrer">
-            Instagram
+          <a class="logo-link" href="https://instagram.com/aaron.bmartin" target="_blank" rel="noreferrer" aria-label="Abrir Instagram">
+            <img src="./assets/instagram.png" alt="Instagram" />
           </a>
 
           <!-- LinkedIn se deja como placeholder -->
-          <a class="contact-link" href="#" aria-disabled="true">
-            LinkedIn
+          <a class="logo-link is-disabled" href="#" aria-disabled="true" aria-label="LinkedIn (no disponible)">
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
           </a>
         </div>
       </div>
