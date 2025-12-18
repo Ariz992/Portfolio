@@ -238,6 +238,14 @@ body{
   filter: drop-shadow(0 3px 0 rgba(0,0,0,.18));
 }
 
+.logo-link img[alt="Gmail"]{
+  margin-top: 60px;   /* baja Gmail */
+}
+
+.logo-link img[alt="Instagram"]{
+  margin-top: -200px;  /* sube Instagram */
+}
+
 .logo-link:hover{
   transform: translateY(-1px);
   filter: brightness(0.98);
