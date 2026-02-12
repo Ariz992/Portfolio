@@ -101,14 +101,14 @@ body{
   align-items: stretch;
 }
 
-/* portada: solo derecha (foto grande) */
+/* portada: vuelve a tener panel izquierdo */
 .screen--cover{
-  grid-template-columns: 1fr;
-  padding-left: 0;
+  grid-template-columns: var(--sidebar-w) 1fr;
 }
 .screen--cover .screen__right{
   min-height: 100vh;
 }
+
 
 .screen__left{
   background: var(--turq);
@@ -174,6 +174,10 @@ body{
   height: auto;
   border: 6px solid rgba(0,0,0,.25);
 }
+.hero-photo--cover{
+  margin-left: 60px; /* <- ESTE NÚMERO ES EL QUE TOCÁS */
+}
+
 
 .big-logo{
   width: min(700px, 92%);
@@ -285,3 +289,53 @@ body{
   .screen__right{ padding: 22px 18px; }
   .logo-link img{ width: min(360px, 92%); }
 }
+
+.ort-small{
+  width: min(280px, 95%);
+  height: auto;
+  margin-top: 18px;
+}
+
+.projects-preview{
+  width: min(760px, 95%);
+  text-align: center;
+}
+
+.proj-card{
+  margin: 18px 0;        /* antes 12px */
+  padding: 26px 22px;    /* antes 16px 14px */
+  border-radius: 18px;   /* antes 14px */
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  color: rgba(255,255,255,.9);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.proj-title{
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: rgba(255,255,255,.95);
+}
+
+.proj-text{
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.85);
+}
+
+.proj-list{
+  margin: 0;
+  padding-left: 18px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.80);
+}
+
+/* opcional: un poquito más de aire interno para "big" */
+.proj-card--big{
+  padding: 30px 26px;
+}
+
