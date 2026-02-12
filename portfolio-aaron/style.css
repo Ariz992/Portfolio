@@ -189,11 +189,16 @@ body{
   max-width: 780px;
 }
 .right-title{
-  margin: 0 0 16px;
-  color: rgba(0,0,0,.8);
-  font-size: 18px;
+  margin: 0 0 22px;
+
+  font-family: "Georgia", "Times New Roman", serif; /* MISMA TIPOGRAFIA */
+  font-size: 52px;          /* <- TITULO GRANDE */
   font-weight: 700;
+
+  color: white;             /* <- BLANCO */
+  letter-spacing: 1px;
 }
+
 .feature-img{
   width: min(520px, 92%);
   height: auto;
@@ -218,17 +223,16 @@ body{
   filter: drop-shadow(0 2px 0 rgba(0,0,0,.15));
 }
 
-/* Contacto como imagenes */
 .contact-logos{
-  width: min(720px, 95%);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 26px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
+
 .logo-link{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -237,18 +241,12 @@ body{
 }
 
 .logo-link img{
-  width: min(520px, 92%);
+  width: min(280px, 90%);
   height: auto;
   filter: drop-shadow(0 3px 0 rgba(0,0,0,.18));
 }
 
-.logo-link img[alt="Gmail"]{
-  margin-top: 60px;   /* baja Gmail */
-}
 
-.logo-link img[alt="Instagram"]{
-  margin-top: -200px;  /* sube Instagram */
-}
 
 .logo-link:hover{
   transform: translateY(-1px);
@@ -339,3 +337,58 @@ body{
   padding: 30px 26px;
 }
 
+.proj-text,
+.proj-list,
+.proj-card{
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+
+.icon-grid{
+  width: min(700px, 95%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  place-items: center;
+}
+
+/* tarjeta individual */
+.tool-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* icono */
+.tool-card img{
+  width: 90px;
+  height: auto;
+  margin-bottom: 8px;
+}
+.tool-card img[alt="C#"]{
+  width: 120px;
+}
+
+
+/* nombre herramienta */
+.tool-name{
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 18px;
+  margin: 4px 0 2px;
+  color: white;
+}
+
+/* nivel */
+.tool-level{
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+  color: rgba(255,255,255,.75);
+  margin: 0;
+}
+
+.logo-link img[alt="Instagram"]{
+  width: 260px;              /* más chico que el resto */
+  transform: translateX(20px, -25px); /* corrige el “canvas” corrido */
+  transform: translateY(-26px)
+}
