@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio Aarón Bautista Martin</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Barra lateral">
+    <div class="sidebar__top">
+      <h1 class="sidebar__title">Portfolio Aaron<br/>Bautista Martin</h1>
+    </div>
+
+    <div class="index-card">
+      <p class="index-card__label">Indice:</p>
+      <nav class="index-card__nav">
+        <a class="nav-btn is-active" href="#sobre-mi">Sobre Mi</a>
+        <a class="nav-btn" href="#experiencia">Experiencia</a>
+        <a class="nav-btn" href="#conocimientos">Conocimientos</a>
+        <a class="nav-btn" href="#contactame">Contactame</a>
+      </nav>
+    </div>
+
+    <div class="sidebar__hint">
+      <p class="hint">Usá el índice para navegar.</p>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- PORTADA -->
+    <section class="screen screen--cover" id="top" aria-label="Portada">
+  <div class="screen__left">
+    <h2 class="screen__title">Aarón Martín</h2>
+  </div>
+
+  <div class="screen__right center">
+    <img class="hero-photo hero-photo--cover" src="./assets/perfil.jpg" alt="Foto de Aarón" />
+  </div>
+</section>
+
+
+    <!-- SOBRE MI -->
+    <section class="screen" id="sobre-mi" aria-label="Sobre mí">
+      <div class="screen__left">
+        <h2 class="screen__title">Sobre Mi</h2>
+
+        <p class="screen__text">Mi nombre es Aaron Bautista Martin.</p>
+
+        <p class="screen__text">
+          Estudie y me gradue en ORT donde me especialice en la programacion.
+        </p>
+
+        <p class="screen__text">
+          Durante la secundaria aprendi a programar en multiples lenguajes y programe
+          varias aplicaciones y videojuegos. Especialmente son los videojuegos una de
+          las grandes pasiones que tengo.
+        </p>
+      </div>
+
+      <div class="screen__right center">
+        <img class="big-logo" src="./assets/ort.png" alt="Logo ORT Argentina" />
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="screen" id="experiencia" aria-label="Experiencia">
+      <div class="screen__left">
+        <h2 class="screen__title">Experiencia</h2>
+
+        <p class="screen__text">
+          Compito profesionalmente en videojuegos lo cual me ayudo a desarrollar
+          habilidades como el trabajo en equipo, hacer horas de aprendizaje y ejecucion
+          intensa consecutivas y la capacidad de interpretar a todo tipo de compañeros.
+        </p>
+
+        <p class="screen__text">
+          Esto me ayudo a comprender como son los videojuegos desde el punto de vista
+          de aquellos que lo juegan a maxima intensidad y tambien me provee gran
+          capacidad como tester.
+        </p>
+
+        <div class="screen__block">
+          <a class="link-btn"
+             href="https://liquipedia.net/tft/Ariz"
+             target="_blank"
+             rel="noreferrer">
+            Ver Gaming Profile (Liquipedia)
+          </a>
+        </div>
+      </div>
+
+      <div class="screen__right center">
+        <div class="right-stack">
+          <h3 class="right-title">Team Fight Tactics</h3>
+          <img class="feature-img" src="./assets/tft.png" alt="Team Fight Tactics" />
+          <p class="right-note">Gaming profile</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONOCIMIENTOS -->
+    <section class="screen" id="conocimientos" aria-label="Conocimientos">
+      <div class="screen__left">
+        <h2 class="screen__title">Conocimientos</h2>
+
+        <p class="screen__text">
+          Durante la secundaria me dedique mayormente a aprender diferentes lenguajes
+          de programacion y aplicaciones de desarrollo.
+        </p>
+
+        <ul class="screen__list">
+          <li>Python (basico)</li>
+          <li>JavaScript (basico)</li>
+          <li>C (basico)</li>
+          <li>Herramientas de desarrollo</li>
+        </ul>
+      </div>
+
+      <div class="screen__right center">
+        <!-- VUELVEN LOS ICONOS (como el código anterior) -->
+        <div class="icon-grid" aria-label="Iconos de herramientas y lenguajes">
+          <img src="./assets/blender.png" alt="Blender" />
+          <img src="./assets/vscode.png" alt="Visual Studio Code" />
+          <img src="./assets/python.png" alt="Python" />
+          <img src="./assets/js.png" alt="JavaScript" />
+          <img src="./assets/csharp.png" alt="C#" />
+          <img src="./assets/c.png" alt="C" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTAME -->
+    <section class="screen" id="contactame" aria-label="Contactame">
+      <div class="screen__left">
+        <h2 class="screen__title">Contactame</h2>
+
+        <p class="screen__text">
+          Si les interesa contactarme tendran aca a su disposicion varias formas
+          de hacerlo.
+        </p>
+      </div>
+
+      <div class="screen__right center">
+        <!-- LINKS COMO IMAGENES -->
+        <div class="contact-logos" aria-label="Formas de contacto">
+          <a class="logo-link" href="mailto:aaronbmartin7@gmail.com" aria-label="Enviar mail a Gmail">
+            <img src="./assets/gmail.png" alt="Gmail" />
+          </a>
+
+          <a class="logo-link" href="https://instagram.com/aaron.bmartin" target="_blank" rel="noreferrer" aria-label="Abrir Instagram">
+            <img src="./assets/instagram.png" alt="Instagram" />
+          </a>
+
+          <!-- LinkedIn se deja como placeholder -->
+          <a class="logo-link is-disabled" href="#" aria-disabled="true" aria-label="LinkedIn (no disponible)">
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Aarón Bautista Martin</p>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
