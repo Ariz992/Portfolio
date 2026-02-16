@@ -241,7 +241,7 @@ body{
 }
 
 .logo-link img{
-  width: min(280px, 90%);
+  width: min(340px, 95%);
   height: auto;
   filter: drop-shadow(0 3px 0 rgba(0,0,0,.18));
 }
@@ -388,7 +388,18 @@ body{
 }
 
 .logo-link img[alt="Instagram"]{
-  width: 260px;              /* más chico que el resto */
+  width: 360px;              /* más chico que el resto */
   transform: translateX(20px, -25px); /* corrige el “canvas” corrido */
   transform: translateY(-26px)
+}
+#contactame .screen__left{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left{
+  margin-top: auto;   /* lo empuja hacia abajo */
+  padding-top: 16px;
+  font-size: 12px;
+  opacity: .75;
 }
